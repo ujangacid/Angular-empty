@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&family=Style+Script&family=Stylish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&family=Style+Script&family=Stylish&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Sniglet|Raleway:900");
+html {
+  scroll-behavior: smooth; }
+
+// #para {
+//   background-color: burlywood;
+//   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+// div img {
+//   display: block;
+//   margin-left: auto;
+//   margin-right: auto;
+//   width: 150px; }
+
+// h3 > span {
+//   color: #5a5abe; }
+
+// div + p {
+//   font-size: 12 em;
+//   color: red; }
+
+// .large {
+//   font-size: large; }
+
+body {
+  margin: 0; }
+
+header {
+  padding: 15px 0;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.navbar {
+  background-color: #1f5e5e;
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+  width: 100%; }
+
+.navbar ul li {
+  list-style: none;
+  float: left;
+  margin: 0 20px;
+  position: relative; }
+
+.navbar ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  display: inline;
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Stylish', sans-serif; }
+
+.navbar ul li a:hover {
+  color: #3d8be4; }
+
+.logo {
+  color: white;
+  margin-left: 50px;
+  font-size: 1.5em;
+  margin: 0;
+  font-family: 'Style Script', cursive;
+  cursor: pointer; }
+
+.navbar ul li::after {
+  content: '';
+  height: 1px;
+  width: 100%;
+  background: aqua;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s; }
+
+.navbar ul li :hover::after {
+  width: 100%; }
+
+section {
+  margin-top: 3%; }
+
+.content {
+  width: 100%;
+  position: relative;
+  top: 50%; }
+
+.content h1 {
+  color: #1f5e5e;
+  text-align: center;
+  font-family: 'Style Script', cursive;
+  font-size: 60px; }
+
+.content p {
+  line-height: 20px;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 4em;
+  font-family: 'Old Standard TT', serif;
+  color: #209b9b; }
+
+.wraper {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("https://cutewallpaper.org/26/aqours-beach-wallpaper/7261612.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.container h1 {
+  text-align: center;
+  color: #1f5e5e;
+  font-size: 3em;
+  font-family: 'Style Script', cursive; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; }
+
+.card {
+  box-shadow: 0 4px 8px 0 black;
+  transition: 0.3s;
+  margin: auto;
+  margin-bottom: 20px;
+  display: grid;
+  gap: 50px;
+  background-color: #3d8be4;
+  cursor: pointer; }
+
+.card img {
+  width: 200px;
+  padding: 10px; }
+
+.card-body {
+  padding: 20px 25px;
+  background-color: #40b1ce; }
+
+.card-body p {
+  font-family: 'Old Standard TT', serif;
+  text-align: center; }
+
+.card-body h4 {
+  text-align: center;
+  font-family: 'Style Script', cursive; }
+
+#about {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://asliceofalfredo.files.wordpress.com/2021/07/aqours.jpg?w=1024");
+  background-size: cover;
+  background: position center; }
+
+#about h1 {
+  color: #1f5e5e;
+  text-align: center;
+  font-family: 'Style Script', cursive;
+  font-size: 60px;
+  margin: 30px; }
+
+#about p {
+  font-size: 25px;
+  font-family: 'Stylish', sans-serif;
+  text-align: center;
+  color: #f8eeee;
+  line-height: 25px; }
+
+#contact {
+  width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("https://pbs.twimg.com/media/C9ACnbVUIAAa735.jpg"); }
+
+#contact h1 {
+  color: #1f5e5e;
+  text-align: center;
+  font-family: 'Style Script', cursive;
+  font-size: 60px;
+  margin: 30px; }
+
+#form {
+  overflow: hidden;
+  height: 100%;
+  position: relative; }
+
+form {
+  margin-top: -30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  padding-top: 40px;
+  color: white;
+  position: relative; }
+
+label {
+  font-size: 1em;
+  padding-left: 20px;
+  font-family: 'Sniglet', cursive; }
+
+label, input, textarea {
+  display: block; }
+
+input, textarea {
+  width: 500px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  padding: 10px;
+  font-family: 'Sniglet', cursive;
+  font-size: 1em;
+  color: #676767;
+  transition: border 0.5s;
+  -webkit-transition: border 0.5s;
+  -moz-transition: border 0.5s;
+  -o-transition: border 0.5s;
+  border: solid 3px #98d4f3;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+input:focus, textarea:focus {
+  border: solid 3px #77bde0; }
+
+textarea {
+  height: 50px;
+  resize: none;
+  overflow: auto; }
+
+input[type="submit"] {
+  background-color: #1f5e5e;
+  color: white;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 1.29em;
+  font-family: 'Sniglet', cursive;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s; }
+
+input[type="submit"]:hover {
+  background-color: #3d8be4; }
+
+footer {
+  background-color: #1f5e5e;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  padding: 15px;
+  margin-top: 50px; }
+
+footer i {
+  color: white;
+  float: right;
+  margin-right: 30px; }
+
+footer a {
+  font-family: 'Sniglet', cursive;
+  text-decoration: none;
+  color: white;
+  margin-left: 5px; }
+
+.profil-header {
+  display: flex;
+  border: #1b0202;
+  background-color: #1f5e5e; }
+
+.profil-header .left-section {
+  flex: 6; }
+
+.left-section .profil-name {
+  color: #77bde0;
+  text-align: center;
+  font-family: 'Sniglet', cursive; }
+
+.profil-header .right-section {
+  flex: 6; }
+
+.left-section-contact {
+  display: flex; }
+
+.left-section-contact .contact-profil {
+  flex: 4; }
+
+.contact-profil a {
+  width: 100%;
+  font-size: 30px;
+  text-decoration: none; }
+
+.img-profil {
+  margin-top: 20px;
+  height: 100px; }
+
+.contact-profil i {
+  width: 500px;
+  text-decoration: none;
+  color: #77bde0; }
+
+hr {
+  border: #1b0202;
+  font-weight: bolder; }
+
+.education {
+  display: flex; }
+
+.left-education {
+  flex: 6;
+  margin: 1px 10px; }
+
+.education h2 {
+  font-family: 'Sniglet', cursive;
+  text-align: center; }
+
+.profil p {
+  font-family: 'Stylish', sans-serif;
+  font-size: large;
+  text-align: center; }
+
+.right-education {
+  flex: 6;
+  float: right;
+  margin: auto 40px; }
+
+.lulusan p {
+  font-family: 'Stylish', sans-serif;
+  font-size: large;
+  text-align: center; }
+
+p strong {
+  text-decoration: double; }
+
+.lulusan img {
+  margin: auto; width: 100px; display: flex; }
+
+.skill {
+  display: flex;
+  background-color: #1f5e5e; }
+
+.left-skill {
+  flex: 6; }
+
+.right-skill {
+  flex: 6; }
+
+.hard-skill {
+  display: inline; }
+
+.hard-skill h2 {
+  font-family: 'Sniglet', cursive;
+  text-align: center;
+  color: #77bde0; }
+
+.talent {
+  text-align: center;
+  list-style: none;
+  font-size: larger;
+  font-family: 'Stylish', sans-serif;
+  color: #77bde0;
+  display: flex; }
+
+.talent li {
+  margin: auto;
+  text-align: center;
+  font-size: larger; }
+
+.right-skill h2 {
+  font-family: 'Sniglet', cursive;
+  color: #77bde0;
+  text-align: center; }
+
+.right-skill h3 {
+  font-family: 'Sniglet', cursive;
+  color: #77bde0; }
+
+.right-skill p {
+  font-size: larger;
+  font-family: 'Stylish', sans-serif;
+  color: #77bde0; }
+
+.portofolio h2 {
+  font-family: 'Sniglet', cursive;
+  text-align: center; }
+
+.porto-mid {
+  display: flex; }
+
+.porto-mid h3 {
+  font-family: 'Sniglet', cursive; }
+
+.porto-mid p {
+  font-size: larger;
+  font-family: 'Stylish', sans-serif; }
+
+.porto-left {
+  flex: 6;
+  margin: auto 30px; }
+
+.porto-right {
+  flex: 6;
+  margin: auto;
+  margin-top: 1px; }

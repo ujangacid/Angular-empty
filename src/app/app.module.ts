@@ -1,15 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
-
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app.routing.module';
 import { PagesModule } from './pages/pages.module';
+import { ResumeModule } from './resume/resume.module';
 import { SampleRouteModule } from './sample-route/sample-route.module';
 import { SharedModule } from './shared/shared.module';
+import { TodoComponent } from './todo/todo.component';
+
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, SharedModule, PagesModule,AppRoutingModule,RouterModule,SampleRouteModule],
+  declarations: [AppComponent, TodoComponent],
+  imports: [
+    BrowserModule,
+    PagesModule,
+    SharedModule,
+    ResumeModule,
+    SampleRouteModule,
+    AppRoutingModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

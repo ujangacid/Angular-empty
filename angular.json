@@ -91,6 +91,7 @@
             ],
             "styles": [
               "bootstrap/scss/bootstrap.scss",
+              "bootstrap/css/bootstrap.css",
               "font-awesome/scss/font-awesome.scss",
               "src/styles.scss"
 
