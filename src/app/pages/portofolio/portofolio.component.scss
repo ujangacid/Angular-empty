@@ -1,0 +1,139 @@
+.profil-header {
+  display: flex;
+  border: #1b0202;
+  background-color: #1f5e5e; }
+
+.profil-header .left-section {
+  flex: 6; }
+
+.left-section .profil-name {
+  color: #77bde0;
+  text-align: center;
+  font-family: 'Sniglet', cursive; }
+
+.profil-header .right-section {
+  flex: 6; }
+
+.left-section-contact {
+  display: flex; }
+
+.left-section-contact .contact-profil {
+  flex: 4; }
+
+.contact-profil a {
+  width: 100%;
+  font-size: 30px;
+  text-decoration: none; }
+
+.img-profil {
+  margin-top: 20px;
+  height: 100px; }
+
+.contact-profil i {
+  width: 500px;
+  text-decoration: none;
+  color: #77bde0; }
+
+hr {
+  border: #1b0202;
+  font-weight: bolder; }
+
+.education {
+  display: flex; }
+
+.left-education {
+  flex: 6;
+  margin: 1px 10px; }
+
+.education h2 {
+  font-family: 'Sniglet', cursive;
+  text-align: center; }
+
+.profil p {
+  font-family: 'Stylish', sans-serif;
+  font-size: large;
+  text-align: center; }
+
+.right-education {
+  flex: 6;
+  float: right;
+  margin: auto 40px; }
+
+.lulusan p {
+  font-family: 'Stylish', sans-serif;
+  font-size: large;
+  text-align: center; }
+
+p strong {
+  text-decoration: double; }
+
+.lulusan img {
+  margin: auto; }
+
+.skill {
+  display: flex;
+  background-color: #1f5e5e; }
+
+.left-skill {
+  flex: 6; }
+
+.right-skill {
+  flex: 6; }
+
+.hard-skill {
+  display: inline; }
+
+.hard-skill h2 {
+  font-family: 'Sniglet', cursive;
+  text-align: center;
+  color: #77bde0; }
+
+.talent {
+  text-align: center;
+  list-style: none;
+  font-size: larger;
+  font-family: 'Stylish', sans-serif;
+  color: #77bde0;
+  display: flex; }
+
+.talent li {
+  margin: auto;
+  text-align: center;
+  font-size: larger; }
+
+.right-skill h2 {
+  font-family: 'Sniglet', cursive;
+  color: #77bde0;
+  text-align: center; }
+
+.right-skill h3 {
+  font-family: 'Sniglet', cursive;
+  color: #77bde0; }
+
+.right-skill p {
+  font-size: larger;
+  font-family: 'Stylish', sans-serif;
+  color: #77bde0; }
+
+.portofolio h2 {
+  font-family: 'Sniglet', cursive;
+  text-align: center; }
+
+.porto-mid {
+  display: flex; }
+
+.porto-mid h3 {
+  font-family: 'Sniglet', cursive; }
+
+.porto-mid p {
+  font-size: larger;
+  font-family: 'Stylish', sans-serif; }
+
+.porto-left {
+  flex: 6;
+  margin: auto 30px; }
+
+.porto-right {
+  flex: 6;
+  margin: auto;
+  margin-top: 1px; }
