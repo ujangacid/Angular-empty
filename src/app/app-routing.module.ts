@@ -11,24 +11,32 @@ import { NotFoundComponent } from './shared/components/not-found/not-found.compo
 import { TodoComponent } from './todo/todo.component';
 
 const routes: Routes = [
-  { path: '', component: PagesComponent },
-  { path: 'portofolio', component: ResumeComponent },
-  { path: 'todo', component: TodoComponent },
+  // { path: '', component: PagesComponent },
+  // { path: 'portofolio', component: ResumeComponent },
+  // { path: 'todo', component: TodoComponent },
+  // {
+  //   path: 'component-a',
+  //   component: ComponentAComponent,
+  //   children: [
+  //     {
+  //       path: 'child-a',
+  //       component: ChildAComponent,
+  //     },
+  //     { path: 'child-b', component: ChildBComponent },
+  //     { path: 'child-b/:id', component: ChildBComponent },
+  //   ],
+  // }, //path itu urlnya, component itu ocmponent yang akan di load
+  // { path: 'component-b', component: ComponentBComponent },
+  // { path: '', redirectTo: '/component-a', pathMatch: 'full' },
+  // { path: '**', component: NotFoundComponent },
   {
-    path: 'component-a',
-    component: ComponentAComponent,
-    children: [
-      {
-        path: 'child-a',
-        component: ChildAComponent,
-      },
-      { path: 'child-b', component: ChildBComponent },
-      { path: 'child-b/:id', component: ChildBComponent },
-    ],
-  }, //path itu urlnya, component itu ocmponent yang akan di load
-  { path: 'component-b', component: ComponentBComponent },
-  { path: '', redirectTo: '/component-a', pathMatch: 'full' },
-  { path: '**', component: NotFoundComponent },
+    path:'',
+    loadChildren:() => import('./pages/pages.module').then(m => m.PagesModule)
+  },
+  {
+    path:'**',
+    component:NotFoundComponent
+  }
 ]; // sets up routes constant where you define your routes
 
 // configures NgModule imports and exports

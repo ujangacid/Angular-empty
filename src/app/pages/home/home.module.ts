@@ -5,6 +5,9 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home.component';
 import { ServiceComponent } from './service/service.component';
 import { PortofolioComponent } from './portofolio/portofolio.component';
+import { RouterModule, Routes } from '@angular/router';
+import { CenterComponent } from './center/center.component';
+
 
 @NgModule({
   declarations: [
@@ -13,6 +16,7 @@ import { PortofolioComponent } from './portofolio/portofolio.component';
     AboutComponent,
     ServiceComponent,
     PortofolioComponent,
+    CenterComponent,
   ],
   imports: [
     CommonModule

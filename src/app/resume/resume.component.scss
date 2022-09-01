@@ -277,7 +277,9 @@ footer a {
 .profil-header {
   display: flex;
   border: #1b0202;
-  background-color: #1f5e5e; }
+  background-color: #1f5e5e;
+  margin-top: 10px;
+}
 
 .profil-header .left-section {
   flex: 6; }
@@ -389,7 +391,8 @@ p strong {
 .right-skill p {
   font-size: larger;
   font-family: 'Stylish', sans-serif;
-  color: #77bde0; }
+  color: #77bde0;
+ }
 
 .portofolio h2 {
   font-family: 'Sniglet', cursive;
