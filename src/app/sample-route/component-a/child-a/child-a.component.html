@@ -1,4 +1,13 @@
 <div class="mt-5">
   <h1 class="text-center">CHILD A</h1>
-  <h3 class="text-center">name = {{ name }}</h3>
+  <h4>{{counter}}</h4>
+  <div class="button">
+    <div class="plus">
+      <button class="btn btn-danger mb-3"(click)="decrement()">-</button>
+      <button class="btn btn-primary mb-3 mx-2"(click)="increment()">+</button>
+    </div>
+  </div>
+
+  <!-- <h3 class="text-center">name = {{ name }}</h3> -->
+  <img src="{{image.src}}" alt="{{image.alt}}" class="img-fluid justify-content-center">
 </div>

@@ -303,9 +303,13 @@ footer a {
   font-size: 30px;
   text-decoration: none; }
 
-.img-profil {
+.img-profil  img {
   margin-top: 20px;
-  height: 100px; }
+  margin-bottom: 10px;
+  width: 100px;
+  height: auto;
+  
+ }
 
 .contact-profil i {
   width: 500px;

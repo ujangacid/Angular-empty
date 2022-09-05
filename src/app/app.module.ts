@@ -6,10 +6,9 @@ import { PagesModule } from './pages/pages.module';
 import { ResumeModule } from './resume/resume.module';
 import { SampleRouteModule } from './sample-route/sample-route.module';
 import { SharedModule } from './shared/shared.module';
-import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
-  declarations: [AppComponent, TodoComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     PagesModule,

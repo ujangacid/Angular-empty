@@ -1,9 +1,9 @@
-<h1>COMPONENT A</h1>
+<div class="container mt-3">
+  <h1>COMPONENT A</h1>
 <a routerLink="/component-b" class="btn btn-outline-primary"
-  >Go To Component B</a
->
+  >Go To Component B</a>
 
-<div class="row">
+<!-- <div class="row">
   <div class="col-md-6">
     <div class="list-group mt-5">
       <a routerLink="child-a" class="list-group-item list-group-item-action"
@@ -14,6 +14,11 @@
       >
     </div>
   </div>
-</div>
+</div> -->
+<h2 class="">{{counter}}</h2>
+<app-child-a [image] ="image"(result)="setCounter($event)"></app-child-a>
 
 <router-outlet></router-outlet>
+
+
+</div>

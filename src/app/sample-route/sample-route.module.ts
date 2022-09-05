@@ -8,12 +8,16 @@ import { ChildBComponent } from './component-a/child-b/child-b.component';
 import { HomeModule } from '../pages/home/home.module';
 import { PagesModule } from '../pages/pages.module';
 
+const component = [
+  ComponentAComponent,
+  ComponentBComponent,
+  ChildAComponent,
+  ChildBComponent
+]
+
 @NgModule({
   declarations: [
-    ComponentAComponent,
-    ComponentBComponent,
-    ChildAComponent,
-    ChildBComponent,
+    component
   ],
   imports: [CommonModule, RouterModule],
   exports: [ComponentAComponent, ComponentBComponent],

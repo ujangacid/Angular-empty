@@ -7,6 +7,7 @@ import { ServiceComponent } from './service/service.component';
 import { PortofolioComponent } from './portofolio/portofolio.component';
 import { RouterModule, Routes } from '@angular/router';
 import { CenterComponent } from './center/center.component';
+import { HomeRoutingModule } from './home-routing.module';
 
 
 @NgModule({
@@ -19,7 +20,7 @@ import { CenterComponent } from './center/center.component';
     CenterComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,HomeRoutingModule
   ],
   exports: [
     HomeComponent]

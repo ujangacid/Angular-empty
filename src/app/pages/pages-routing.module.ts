@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { ResumeComponent } from '../resume/resume.component';
-import { TodoComponent } from '../todo/todo.component';
+import { TodoComponent } from './todo/todo.component';
+import { AnimeComponent } from './anime/anime.component';
 
 const routes:Routes = [
   {
@@ -16,6 +17,10 @@ const routes:Routes = [
   {
     path:'todo',
     component:TodoComponent
+  },
+  {
+    path:'anime',
+    component:AnimeComponent
   }
 ]
 @NgModule({
