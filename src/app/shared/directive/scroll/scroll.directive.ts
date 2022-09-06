@@ -6,7 +6,8 @@ import { Directive, HostListener } from '@angular/core';
 export class ScrollDirective {
 
   @HostListener('window:scroll', ['$event'])
-  onWindowScroll() {
+
+  onWindowScroll():void {
     let element = document.querySelector('#header') as HTMLElement;
     if (window.pageYOffset > 100) {
       element.classList.add('header-scrolled');

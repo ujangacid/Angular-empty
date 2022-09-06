@@ -1,9 +1,11 @@
-<header id="header" class="fixed-top" appScroll>
-  <nav class="navbar navbar-dark navbar-expand-lg">
+<header id="header" class="fixed-top">
+  <nav class="navbar navbar-dark navbar-expand-lg" appScroll>
     <div class="container">
-      <a class="navbar-brand" href="#"
-        ><i class="bi bi-code-slash"></i> PascalApp</a
-      >
+      <h1 class="header-logo">
+        <a class="navbar-brand" href="#"
+          ><i class="bi bi-code-slash"></i> PascalApp</a
+        >
+      </h1>
       <button
         class="navbar-toggler"
         type="button"
@@ -23,35 +25,53 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">Tentang</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#service">Layanan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portofolio">Portofolio</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
+            <a class="nav-link" href="#about"
+              >Tentang</a
             >
-              Demo
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" routerLink="/portofolio">Resume</a>
-              </li>
-              <li>
-                <a class="dropdown-item" routerLink="/todo">Todo</a>
-              </li>
-              <li><a class="dropdown-item" routerLink="/anime">Anime</a>
-              </li>
-            </ul>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service"
+              >Layanan</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portofolio"
+              >Portofolio</a
+            >
+          </li>
+
+          <ng-container *ngIf="!isLoggedIn; else elseTemplate">
+            <li class="nav-item">
+              <a class="nav-link" (click)="login()" href="javascript:void(0)">Login</a>
+            </li>
+          </ng-container>
+          <ng-template #elseTemplate>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Demo
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" routerLink="/portofolio">Resume</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" routerLink="/todo">Todo</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" routerLink="/anime">Anime</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)" (click)="logout()">Logout</a>
+            </li>
+          </ng-template>
         </ul>
       </div>
     </div>

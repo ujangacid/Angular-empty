@@ -4,19 +4,41 @@
     <form [formGroup]="todoForm" (ngSubmit)="onSubmitTodo()">
       <div class="input-group mb-3">
         <div class="input-group-text">
-          <input type="checkbox" class="form-check-input" />
+          <input
+            type="checkbox"
+            class="form-check-input"
+            formControlName="isDone"
+          />
         </div>
         <input
           type="text"
-          class="form-control"
+          class="form-control {{ isFieldValid('name') }}"
           placeholder="Todo"
           aria-label="Todo"
           formControlName="name"
+          required
         />
-        <button class="btn btn-outline-primary" [disabled]="!todoForm.valid">
+        <button
+          appBsButton
+          color="success"
+          size="md"
+          [disabled]="!todoForm.valid"
+        >
           ADD
         </button>
+        <div
+          id="validationServer03Feedback"
+          validation-message
+          class="invalid-feedback"
+        >
+          Please provide valid input min 5.
+        </div>
       </div>
     </form>
   </div>
 </div>
+
+<!-- [control]="todoForm.controls['name']" -->
+<!-- [label]="'todo name'" -->
+
+

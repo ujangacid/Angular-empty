@@ -5,11 +5,12 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ScrollDirective } from './directive/scroll/scroll.directive';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { RouterModule } from '@angular/router';
+import { BsButtonDirective } from './directive/bs-button/bs-button.directive';
 
 const components = [HeaderComponent, FooterComponent, NotFoundComponent];
 
 @NgModule({
-  declarations: [...components, ScrollDirective],
+  declarations: [...components, ScrollDirective, BsButtonDirective],
   imports: [CommonModule, RouterModule],
   exports: [...components],
 })
