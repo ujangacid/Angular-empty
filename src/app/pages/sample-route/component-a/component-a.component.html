@@ -15,15 +15,21 @@
     </div>
   </div>
 </div> -->
-<h2 class="">{{counter}}</h2>
+<a routerLink="/component-a/child-a" class="btn btn-outline-danger mx-3" (click)="isToggleButton()">
+  Toggle child A
+</a>
+<ng-container *ngIf="toggle">
+  <app-child-a></app-child-a>
+</ng-container>
+<!-- <h2 class=""></h2> -->
 
-<app-child-a [image] ="image"(result)="setCounter($event)">
+<!-- <app-child-a [image] ="image"(result)="setCounter($event)">
   Ujang
 <ng-container PunyaTagP>TagP</ng-container>
 <ng-container tagSpan>tesSpan</ng-container>
 
-</app-child-a>
-<router-outlet></router-outlet>
+</app-child-a> -->
+<!-- <router-outlet></router-outlet> -->
 
 
 </div>

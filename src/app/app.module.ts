@@ -4,7 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PagesModule } from './pages/pages.module';
 import { ResumeModule } from './resume/resume.module';
-import { SampleRouteModule } from './sample-route/sample-route.module';
+import { SampleRouteModule } from './pages/sample-route/sample-route.module';
 import { SharedModule } from './shared/shared.module';
 
 @NgModule({

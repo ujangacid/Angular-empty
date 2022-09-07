@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ResumeComponent } from '../resume/resume.component';
 import { TodoComponent } from './todo/todo.component';
 import { AnimeComponent } from './anime/anime.component';
+import { SafeCall } from '@angular/compiler';
+import { ComponentAComponent } from './sample-route/component-a/component-a.component';
 
 const routes:Routes = [
   {
@@ -21,7 +23,7 @@ const routes:Routes = [
   {
     path:'anime',
     component:AnimeComponent
-  }
+  },
 ]
 @NgModule({
   declarations: [],

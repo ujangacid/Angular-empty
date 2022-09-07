@@ -1,7 +1,10 @@
 import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
 import { AbstractControl, FormControl, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
+import Swal from 'sweetalert2';
 import { TodoField } from '../model/todo.field.model';
 import {Todo} from '../model/todo.model'
+import { TodoService } from '../services/todo.service';
 
 @Component({
   selector: 'app-todo-form',
@@ -11,10 +14,13 @@ import {Todo} from '../model/todo.model'
 
 export class TodoFormComponent implements OnInit, OnChanges {
 
-  @Input() todo?: Todo;
-  @Output() todoChange: EventEmitter<Todo> = new EventEmitter<Todo>();
+  todo?:Todo
   field: typeof TodoField = TodoField;
   todoForm!: FormGroup;
+  constructor (
+    private readonly todoService:TodoService,
+    private readonly route: ActivatedRoute
+    ) {}
 
   buildForm(): void {
     this.todoForm = new FormGroup({
@@ -33,7 +39,14 @@ export class TodoFormComponent implements OnInit, OnChanges {
   }
 
   onSubmitTodo(): void {
-    this.todoChange.emit(this.todoForm.value);
+    const todo:Todo = this.todoForm.value
+    Swal.fire({
+      icon: 'success',
+      title: `${todo.name} has been saved`,
+      showConfirmButton: false,
+      timer: 1500
+    })
+    this.todoService.saveTodo(todo)
     this.todoForm.reset();
   }
 

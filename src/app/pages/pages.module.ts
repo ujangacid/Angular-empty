@@ -6,11 +6,13 @@ import { PagesComponent } from './pages.component';
 import { AnimeComponent } from './anime/anime.component';
 import { PagesRoutingModule } from './pages-routing.module';
 import { TodoModule } from './todo/todo.module';
+import { SampleRouteModule } from './sample-route/sample-route.module';
+import { SampleModule } from './sample-route/sample.module';
 
 
 @NgModule({
   declarations: [PagesComponent, AnimeComponent],
-  imports: [CommonModule, HomeModule, HomeRoutingModule,PagesRoutingModule,TodoModule],
-  exports: [PagesComponent,AnimeComponent],
+  imports: [CommonModule, HomeModule, HomeRoutingModule,PagesRoutingModule,TodoModule,SampleRouteModule,SampleModule],
+  exports: [PagesComponent],
 })
 export class PagesModule {}{}
