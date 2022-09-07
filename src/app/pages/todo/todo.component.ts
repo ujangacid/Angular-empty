@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
 import { Todo } from './model/todo.model';
 import { TodoListComponent } from './todo-list/todo-list.component';
+import { format } from 'date-fns'
+import {id,ja} from 'date-fns/locale'
 
 @Component({
   selector: 'app-todo',
@@ -12,6 +14,8 @@ export class TodoComponent implements OnInit {
 
   todos: Todo[] = [];
   todoValue?: Todo;
+  today:string = ""
+  local: Locale = ja
   //  Two Way, kita bisa memanfaatkan getter and setter
   get todo(): Todo {
     return this.todoValue as Todo
@@ -23,6 +27,7 @@ export class TodoComponent implements OnInit {
 
   ngOnInit(): void {
     this.loadTodos();
+
   }
 
   loadTodos(): void {

@@ -6,11 +6,12 @@ import { ScrollDirective } from './directive/scroll/scroll.directive';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { RouterModule } from '@angular/router';
 import { BsButtonDirective } from './directive/bs-button/bs-button.directive';
+import { DateCustomPipe } from './pipes/date-custom/date-custom.pipe';
 
-const components = [HeaderComponent, FooterComponent, NotFoundComponent];
+const components = [HeaderComponent, FooterComponent, NotFoundComponent,DateCustomPipe,BsButtonDirective];
 
 @NgModule({
-  declarations: [...components, ScrollDirective, BsButtonDirective],
+  declarations: [...components],
   imports: [CommonModule, RouterModule],
   exports: [...components],
 })

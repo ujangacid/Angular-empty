@@ -77,4 +77,15 @@ export class AppComponent implements OnInit {
     this.message = value;
   }
 
+  /**
+   * pipes atau pipa =>
+   * fungsi untuk memformat suatu nilai dalam sebuah element
+   * Angular menyediakan fungsi bawaan
+   * penggunaan {{value expresion |pipeName }}
+   * pipe juga dapat mengirim sebuah parameter
+   * caranya dengan memberi : setelah pipeName
+   * {{value expression | pipeName:"args"}}
+   * parameter ini dapat memiliki berbagai tipe string,number,boolean,object,array dll
+   */
+
 }

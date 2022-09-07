@@ -1,5 +1,5 @@
 <div class="container mt-3">
-  <h1>COMPONENT A</h1>
+  <h1 class="mt-5">COMPONENT A</h1>
 <a routerLink="/component-b" class="btn btn-outline-primary"
   >Go To Component B</a>
 
@@ -16,8 +16,13 @@
   </div>
 </div> -->
 <h2 class="">{{counter}}</h2>
-<app-child-a [image] ="image"(result)="setCounter($event)"></app-child-a>
 
+<app-child-a [image] ="image"(result)="setCounter($event)">
+  Ujang
+<ng-container PunyaTagP>TagP</ng-container>
+<ng-container tagSpan>tesSpan</ng-container>
+
+</app-child-a>
 <router-outlet></router-outlet>
 
 

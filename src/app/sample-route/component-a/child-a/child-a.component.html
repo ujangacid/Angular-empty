@@ -1,5 +1,13 @@
 <div class="mt-5">
-  <h1 class="text-center">CHILD A</h1>
+  <h1 class="text-center">
+    <ng-content></ng-content>
+  </h1>
+  <p>
+    <ng-content select="[PunyaTagP]"></ng-content>
+  </p>
+  <span>
+    <ng-content select="[tagSpan]"></ng-content>
+  </span>
   <h4>{{counter}}</h4>
   <div class="button">
     <div class="plus">

@@ -5,6 +5,7 @@ import { TodoFormComponent } from './todo-form/todo-form.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { TodoRoutingModule } from './todo.routing.module';
 import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 
@@ -15,7 +16,7 @@ import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
     TodoListComponent
   ],
   imports: [
-    CommonModule,TodoRoutingModule, FormsModule, ReactiveFormsModule
+    CommonModule,TodoRoutingModule, FormsModule, ReactiveFormsModule,SharedModule
   ]
 })
 export class TodoModule { }

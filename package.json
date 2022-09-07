@@ -21,6 +21,7 @@
     "@sweetalert2/themes": "^5.0.12",
     "bootstrap": "^5.2.0",
     "bootstrap-icons": "^1.9.1",
+    "date-fns": "^2.29.2",
     "font-awesome": "^4.7.0",
     "rxjs": "~7.5.0",
     "sweetalert2": "^11.4.29",
